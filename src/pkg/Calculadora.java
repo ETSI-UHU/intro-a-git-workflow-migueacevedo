@@ -25,8 +25,7 @@ public class Calculadora {
                 suma(num1, num2);
                 break;
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+			resta(num1, num2);
                 break;
             case '*':
 			multiplicacion(num1, num2);
@@ -41,6 +40,13 @@ public class Calculadora {
         scanner.close();
     }
 
+
+	private static void resta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+		System.out.println("Resultado: " + resultado);
+	}
+    
     
     private static void suma(double num1, double num2) {
     	double resultado = num1 + num2;
